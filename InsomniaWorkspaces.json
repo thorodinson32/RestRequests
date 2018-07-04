@@ -1,0 +1,187 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-07-04T02:44:32.267Z",
+	"__export_source": "insomnia.desktop.app:v5.16.6",
+	"resources": [
+		{
+			"_id": "wrk_8c236f30b4bd4bf39fdae391687abd0d",
+			"created": 1529176216989,
+			"description": "",
+			"modified": 1529176216989,
+			"name": "Insomnia",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_970376a7e9c1438b826be2743982e5c4",
+			"color": null,
+			"created": 1529176217023,
+			"data": {},
+			"isPrivate": false,
+			"modified": 1529176217023,
+			"name": "New Environment",
+			"parentId": "wrk_8c236f30b4bd4bf39fdae391687abd0d",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_ccafcd9d5d394d8aa3b09b937e04a38f",
+			"cookies": [
+				{
+					"creation": "2018-06-16T20:14:12.472Z",
+					"domain": "localhost",
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "2599114756372627",
+					"key": "JSESSIONID",
+					"lastAccessed": "2018-06-16T20:18:23.957Z",
+					"path": "/",
+					"value": "BC6BEAB01E357A5D37C22FE848A2E446"
+				}
+			],
+			"created": 1529176217167,
+			"modified": 1529180303957,
+			"name": "Default Jar",
+			"parentId": "wrk_8c236f30b4bd4bf39fdae391687abd0d",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_0bb97fc09736490d95e9cbafd5dc426f",
+			"created": 1529183401327,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1529183401327,
+			"modified": 1529183401327,
+			"name": "BudgetViking",
+			"parentId": "wrk_8c236f30b4bd4bf39fdae391687abd0d",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_b3c278e544f741a5b0bbb5bb1aad8a5d",
+			"created": 1530665674766,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1530665674766,
+			"modified": 1530665674766,
+			"name": "FitnessViking",
+			"parentId": "wrk_8c236f30b4bd4bf39fdae391687abd0d",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_9b277c8330884878b5836d721fc1bc4b",
+			"authentication": {
+				"disabled": false,
+				"password": "test",
+				"type": "basic",
+				"username": "test"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"billName\": \"Rent\",\n\t\"amount\": \"1400.00\",\n\t\"dayOfMonthDue\": \"1\"\n}"
+			},
+			"created": 1529179886665,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_0aba61b9bbc148a7b58a362026c47b5f",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529183181710.625,
+			"method": "POST",
+			"modified": 1530671060570,
+			"name": "Create Bill",
+			"parameters": [],
+			"parentId": "fld_0bb97fc09736490d95e9cbafd5dc426f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/bill",
+			"_type": "request"
+		},
+		{
+			"_id": "req_7bc9f462f324418cb8a5a66bcbf2abc6",
+			"authentication": {
+				"disabled": false,
+				"password": "test",
+				"type": "basic",
+				"username": "test"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1529180393789,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_0aba61b9bbc148a7b58a362026c47b5f",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529183181660.625,
+			"method": "GET",
+			"modified": 1529183450921,
+			"name": "Get Bills",
+			"parameters": [],
+			"parentId": "fld_0bb97fc09736490d95e9cbafd5dc426f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/bill",
+			"_type": "request"
+		},
+		{
+			"_id": "req_e7d39fb55ac643b494fcdf54d7be153d",
+			"authentication": {},
+			"body": {},
+			"created": 1530665707513,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1530665707513,
+			"method": "GET",
+			"modified": 1530671062718,
+			"name": "Calculate One Rep Max",
+			"parameters": [],
+			"parentId": "fld_b3c278e544f741a5b0bbb5bb1aad8a5d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/onerepmax/225/10",
+			"_type": "request"
+		},
+		{
+			"_id": "req_9c9917637c044b74af0ded96b2302d8a",
+			"authentication": {},
+			"body": {},
+			"created": 1530665725620,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1530665725620,
+			"method": "GET",
+			"modified": 1530671065732,
+			"name": "Calculate plates",
+			"parameters": [],
+			"parentId": "fld_b3c278e544f741a5b0bbb5bb1aad8a5d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/plates/225",
+			"_type": "request"
+		}
+	]
+}
