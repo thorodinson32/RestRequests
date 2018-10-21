@@ -1,9 +1,18 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2018-07-04T02:44:32.267Z",
-	"__export_source": "insomnia.desktop.app:v5.16.6",
+	"__export_date": "2018-10-21T19:09:22.735Z",
+	"__export_source": "insomnia.desktop.app:v6.0.2",
 	"resources": [
+		{
+			"_id": "wrk_5fb00dcd448d46318c70cc3f41ced7cb",
+			"created": 1510698889478,
+			"description": "",
+			"modified": 1510698889478,
+			"name": "Insomnia",
+			"parentId": null,
+			"_type": "workspace"
+		},
 		{
 			"_id": "wrk_8c236f30b4bd4bf39fdae391687abd0d",
 			"created": 1529176216989,
@@ -14,12 +23,115 @@
 			"_type": "workspace"
 		},
 		{
+			"_id": "env_03a38654a1f244ae8a2af92179669e23",
+			"color": null,
+			"created": 1510698889483,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1540148962792,
+			"modified": 1510698889483,
+			"name": "Base Environment",
+			"parentId": "wrk_5fb00dcd448d46318c70cc3f41ced7cb",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_3fbd519eb0ae46b68af178154057922e",
+			"cookies": [
+				{
+					"creation": "2018-01-18T01:20:40.510Z",
+					"domain": "localhost",
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "9780768543197433",
+					"key": "JSESSIONID",
+					"lastAccessed": "2018-01-18T01:22:47.875Z",
+					"path": "/",
+					"value": "60BC2400FBB21151A8F6BC3D917EF527"
+				}
+			],
+			"created": 1510698889480,
+			"modified": 1516238567876,
+			"name": "Default Jar",
+			"parentId": "wrk_5fb00dcd448d46318c70cc3f41ced7cb",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_71d621f49f2a429a85eb5f23d89f0149",
+			"authentication": {
+				"disabled": true,
+				"password": "ZaneSpring32",
+				"type": "basic",
+				"username": "thorodinson32"
+			},
+			"body": {},
+			"created": 1515714749696,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1515714749696,
+			"method": "GET",
+			"modified": 1537112252966,
+			"name": "Plate Amount Request",
+			"parameters": [],
+			"parentId": "wrk_5fb00dcd448d46318c70cc3f41ced7cb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/calculator/plates/225",
+			"_type": "request"
+		},
+		{
+			"_id": "req_6fa5189b4c4f4ae0b59a42c36d350cfb",
+			"authentication": {
+				"disabled": true,
+				"password": "ZaneSpring32",
+				"type": "basic",
+				"username": "thorodinson32"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"reps\": 5,\n\t\"weight\": 225\n}"
+			},
+			"created": 1523819217573,
+			"description": "",
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1515714749646,
+			"method": "POST",
+			"modified": 1537112542110,
+			"name": "One Rep Max Request",
+			"parameters": [],
+			"parentId": "wrk_5fb00dcd448d46318c70cc3f41ced7cb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/calculator/onerepmax/",
+			"_type": "request"
+		},
+		{
 			"_id": "env_970376a7e9c1438b826be2743982e5c4",
 			"color": null,
 			"created": 1529176217023,
-			"data": {},
+			"data": {
+				"domain": "",
+				"host": "",
+				"port": "",
+				"protocol": ""
+			},
 			"isPrivate": false,
-			"modified": 1529176217023,
+			"metaSortKey": 1538844740320,
+			"modified": 1538845641304,
 			"name": "New Environment",
 			"parentId": "wrk_8c236f30b4bd4bf39fdae391687abd0d",
 			"_type": "environment"
@@ -68,16 +180,48 @@
 			"_type": "request_group"
 		},
 		{
+			"_id": "env_d2c1b850dfeb4fd08b043eb302fcc7da",
+			"color": null,
+			"created": 1538844895737,
+			"data": {
+				"host": "localhost",
+				"port": ":8080",
+				"protocol": "http//"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1538844895737,
+			"modified": 1538845645535,
+			"name": "local",
+			"parentId": "env_970376a7e9c1438b826be2743982e5c4",
+			"_type": "environment"
+		},
+		{
+			"_id": "env_4e5ad0d8c04944cda2cc98aa16187fb7",
+			"color": null,
+			"created": 1538844998176,
+			"data": {
+				"domain": "cfapps.io",
+				"host": "fitness-viking.",
+				"protocol": "https//"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1538844998176,
+			"modified": 1538845644017,
+			"name": "dev",
+			"parentId": "env_970376a7e9c1438b826be2743982e5c4",
+			"_type": "environment"
+		},
+		{
 			"_id": "req_9b277c8330884878b5836d721fc1bc4b",
 			"authentication": {
 				"disabled": false,
-				"password": "test",
+				"password": "testPassword",
 				"type": "basic",
-				"username": "test"
+				"username": "testUser"
 			},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"billName\": \"Rent\",\n\t\"amount\": \"1400.00\",\n\t\"dayOfMonthDue\": \"1\"\n}"
+				"text": "{\n\t\"billName\": \"Car\",\n\t\"amount\": \"330\",\n\t\"dayOfMonthDue\": \"25\"\n}"
 			},
 			"created": 1529179886665,
 			"description": "",
@@ -91,12 +235,13 @@
 			"isPrivate": false,
 			"metaSortKey": -1529183181710.625,
 			"method": "POST",
-			"modified": 1530671060570,
+			"modified": 1540148932722,
 			"name": "Create Bill",
 			"parameters": [],
 			"parentId": "fld_0bb97fc09736490d95e9cbafd5dc426f",
 			"settingDisableRenderRequestBody": false,
 			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
@@ -107,9 +252,9 @@
 			"_id": "req_7bc9f462f324418cb8a5a66bcbf2abc6",
 			"authentication": {
 				"disabled": false,
-				"password": "test",
+				"password": "testPassword",
 				"type": "basic",
-				"username": "test"
+				"username": "testUser"
 			},
 			"body": {
 				"mimeType": "application/json",
@@ -127,16 +272,128 @@
 			"isPrivate": false,
 			"metaSortKey": -1529183181660.625,
 			"method": "GET",
-			"modified": 1529183450921,
-			"name": "Get Bills",
+			"modified": 1540148935804,
+			"name": "Get All Bills",
 			"parameters": [],
 			"parentId": "fld_0bb97fc09736490d95e9cbafd5dc426f",
 			"settingDisableRenderRequestBody": false,
 			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "http://localhost:8080/bill",
+			"_type": "request"
+		},
+		{
+			"_id": "req_46f7e97970384fb88b011cfbbf1a50ac",
+			"authentication": {
+				"disabled": false,
+				"password": "testPassword",
+				"type": "basic",
+				"username": "testUser"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1540147948119,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_0aba61b9bbc148a7b58a362026c47b5f",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1522448965678.3125,
+			"method": "GET",
+			"modified": 1540148895537,
+			"name": "Get Bill By Name",
+			"parameters": [],
+			"parentId": "fld_0bb97fc09736490d95e9cbafd5dc426f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/bill/Rent",
+			"_type": "request"
+		},
+		{
+			"_id": "req_48938f4e9c9b4b679a4326ffe4081214",
+			"authentication": {
+				"disabled": false,
+				"password": "testPassword",
+				"type": "basic",
+				"username": "testUser"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1540147961200,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_0aba61b9bbc148a7b58a362026c47b5f",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1519081857687.1562,
+			"method": "GET",
+			"modified": 1540148938547,
+			"name": "Get Remaining Bills For Month",
+			"parameters": [],
+			"parentId": "fld_0bb97fc09736490d95e9cbafd5dc426f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/bill/remaining",
+			"_type": "request"
+		},
+		{
+			"_id": "req_600260bcbcb04359ba85677629d4ab67",
+			"authentication": {
+				"disabled": false,
+				"password": "testPassword",
+				"type": "basic",
+				"username": "testUser"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1540148002675,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_0aba61b9bbc148a7b58a362026c47b5f",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1520765411682.7344,
+			"method": "DELETE",
+			"modified": 1540148911308,
+			"name": "Delete Bill",
+			"parameters": [],
+			"parentId": "fld_0bb97fc09736490d95e9cbafd5dc426f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/bill/Rent",
 			"_type": "request"
 		},
 		{
@@ -149,16 +406,17 @@
 			"isPrivate": false,
 			"metaSortKey": -1530665707513,
 			"method": "GET",
-			"modified": 1530671062718,
+			"modified": 1538852127451,
 			"name": "Calculate One Rep Max",
 			"parameters": [],
 			"parentId": "fld_b3c278e544f741a5b0bbb5bb1aad8a5d",
 			"settingDisableRenderRequestBody": false,
 			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "http://localhost:8080/onerepmax/225/10",
+			"url": "{{ host  }}{{ domain  }}{{ port  }}/calculator/onerepmax?weight=225&reps=10",
 			"_type": "request"
 		},
 		{
@@ -171,16 +429,17 @@
 			"isPrivate": false,
 			"metaSortKey": -1530665725620,
 			"method": "GET",
-			"modified": 1530671065732,
+			"modified": 1538854507149,
 			"name": "Calculate plates",
 			"parameters": [],
 			"parentId": "fld_b3c278e544f741a5b0bbb5bb1aad8a5d",
 			"settingDisableRenderRequestBody": false,
 			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "http://localhost:8080/plates/225",
+			"url": "{{ host  }}{{ domain  }}{{ port  }}/calculator/plates?weight=310",
 			"_type": "request"
 		}
 	]
